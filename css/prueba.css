@@ -1,0 +1,61 @@
+/* laptop section start*/
+
+#laptop_main_slider a.carousel-control-next {
+    right: 615px;
+    top: 105%;
+}
+
+#laptop_main_slider a.carousel-control-prev {
+    left: 615px;
+    top: 105%;
+}
+
+#laptop_main_slider .carousel-control-next,
+#laptop_main_slider .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    background-color: #30302e;
+    opacity: 1;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#laptop_main_slider .carousel-control-next:focus,
+#laptop_main_slider .carousel-control-next:hover,
+#laptop_main_slider .carousel-control-prev:focus,
+#laptop_main_slider .carousel-control-prev:hover {
+    color: #fff;
+    background-color: #f26522;
+}
+/* laptop section end*/
+
+/* consola section start*/
+
+#consola_main_slider a.carousel-control-next {
+    right: 615px;
+    top: 105%;
+}
+
+#consola_main_slider a.carousel-control-prev {
+    left: 615px;
+    top: 105%;
+}
+
+#consola_main_slider .carousel-control-next,
+#consola_main_slider .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    background-color: #30302e;
+    opacity: 1;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#consola_main_slider .carousel-control-next:focus,
+#consola_main_slider .carousel-control-next:hover,
+#consola_main_slider .carousel-control-prev:focus,
+#consola_main_slider .carousel-control-prev:hover {
+    color: #fff;
+    background-color: #f26522;
+}
+/* consola section end*/
