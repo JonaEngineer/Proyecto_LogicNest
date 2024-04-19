@@ -1,0 +1,222 @@
+/********************************* Rubik Wet Paint ******************************/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+font-family: 'Rubik Wet Paint', system-ui;
+*/
+
+/************************************ Readex Pro ********************************/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;700&family=Rubik+Wet+Paint&display=swap');
+font-family: 'Readex Pro', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--whiteColor);
+}
+
+/* website colors */
+:root {
+    --whiteColor: #ffffff;
+    --lightPurpleColor: #EB00FF;
+    --dullPurpleColor: #CC00FF;
+    --yellowColor: #FFD600;
+    --skyBlueColor: #00E0FF;
+    --blackColor: #000000;
+    --subtitleColor: #AEAEAE;
+    --redColor: #FF0000;
+    --greenColor: #00FF29;
+    --greenLight: #00FFD1;
+    --featureContainer: #000113;
+}
+
+/* father container */
+.father-container-register-admin {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* information container */
+.information-container-register-admin {
+    width: 350px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* title */
+.title-admin {
+    text-align: center;
+    font-family: 'Rubik Wet Paint', system-ui;
+    font-size: 28px;
+}
+
+/* ul container */
+.li-container-register-admin {
+    width: auto;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--subtitleColor);
+}
+
+/* i */
+i {
+    color: var(--blackColor);
+    margin-right: 12px;
+}
+
+
+/* li */
+.li-register-admin {
+    font-size: 21px;
+    margin: 1rem 2rem 2.5rem 2rem;
+    list-style: none;
+    font-family: 'Readex Pro', sans-serif;
+    color: var(--subtitleColor);
+}
+
+/* span container */
+.description-container-register-admin {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+/* span */
+.description-register-admin {
+    font-size: 18px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+/* here */
+.crud-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* second container */
+.information2-container-register-admin,
+.information3-container-register-admin,
+.information4-container-register-admin,
+.information5-container-register-admin,
+.information6-container-register-admin {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/*.active {
+    display: flex;
+  }*/
+
+/* form information */
+.form-information2-container-register-admin {
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+/**/
+
+/* inpts */
+.input-form-information2-registr-admin {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 1px solid var(--subtitleColor);
+    margin-bottom: 1rem;
+}
+
+/* save btn */
+.btnSaveIt {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: none;
+    color: var(--whiteColor);
+    background-color: var(--blackColor);
+    font-family: 'Rubik Wet Paint', system-ui;
+}
+
+.container-btn-actions-admin{
+    padding: 1rem;
+}
+
+/* table container */
+.table-columns-register-admin {
+    width: auto;
+    height: auto;
+}
+
+/* columns */
+thead {
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+/* columns h2 */
+th {
+    padding: 1rem;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Rubik Wet Paint', system-ui;
+}
+
+/* answers */
+tbody {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+/* form crud */
+.form-crud-admin {
+    width: auto;
+    height: auto;
+}
+
+/* btns actions */
+.container-btn-actions-admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* delete */
+.delte-btn-admin {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: none;
+    color: var(--whiteColor);
+    background-color: var(--blackColor);
+    font-family: 'Rubik Wet Paint', system-ui;
+}
+
+/* edit btn */
+.edit-btn-admin {
+    padding: 8px 25px;
+    border-radius: 25px;
+    border: none;
+    color: var(--whiteColor);
+    background-color: var(--blackColor);
+    font-family: 'Rubik Wet Paint', system-ui;
+}
