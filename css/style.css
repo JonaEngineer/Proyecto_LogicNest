@@ -214,8 +214,8 @@ button {
 .banner_bg_main {
     width: 100%;
     float: left;
-    background-image: url(../images/banner.png);
-    height: auto;
+    background-image: url(../images/bnner.jpg);
+    height: 70vh;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -924,6 +924,10 @@ input.mail_bt::placeholder {
 
 .footer_menu li a:hover {
     color: #f26522;
+}
+.footer_logo a{
+    color: #f1f1f1;
+    font-size: 2rem;
 }
 
 .location_main {

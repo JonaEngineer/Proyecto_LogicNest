@@ -173,7 +173,7 @@ $result_chair = $stmt_chair_read->fetchAll();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Interface</title>
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/accessories.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -229,7 +229,7 @@ $result_chair = $stmt_chair_read->fetchAll();
                 <li class="li-register-admin tablinks" onclick="openCategory(event, 'laptopsBtn')"><i class="uil uil-wheelchair-alt"></i>Gaming Laptops</li>
                 <li class="li-register-admin tablinks" onclick="openCategory(event, 'consolesBtn')"><i class="uil uil-wheelchair-alt"></i>Gaming Consoles</li>
                 <li class="li-register-admin tablinks" onclick="openCategory(event, 'chairsBtn')"><i class="uil uil-wheelchair-alt"></i>Gaming Chairs</li>
-                <li class="li-register-admin tablinks" onclick="location.href='accessories.php'"><i class="uil uil-signout"></i>Accessories</li>
+                <li class="li-register-admin tablinks"><i class="uil uil-signout"></i>Accessories</li>
                 <li class="li-register-admin tablinks"><i class="uil uil-signout"></i>Log Out</li>
             </ul>
 
