@@ -49,10 +49,10 @@
                      <div class="custom_menu">
                         <ul>
                            <li><a href="#pc">Gaming PC</a></li>
-                           <li><a href="#">Gaming Monitor</a></li>
-                           <li><a href="#">Gaming Laptop</a></li>
-                           <li><a href="#">Gaming Consola</a></li>
-                           <li><a href="#">Gaming Chairs</a></li>
+                           <li><a href="#Monitor">Gaming Monitor</a></li>
+                           <li><a href="#Laptop">Gaming Laptop</a></li>
+                           <li><a href="#Consola">Gaming Consola</a></li>
+                           <li><a href="#Chairs">Gaming Chairs</a></li>
                         </ul>
                      </div>
                   </div>
@@ -97,9 +97,9 @@
                   <div class="main">
                      <!-- Another variation with a button -->
                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search this blog">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search this blog">
                         <div class="input-group-append">
-                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+                           <button id="searchButton" class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
                            <i class="fa fa-search"></i>
                            </button>
                         </div>
@@ -112,13 +112,17 @@
                      </div>
                      <div class="login_menu">
                         <ul>
-                           <li><a href="#">
+                           <li><a href="cart.php">
                               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                               <span class="padding_10">Cart</span></a>
                            </li>
-                           <li><a href="#">
+                           <li><a href="Login/login.html">
                               <i class="fa fa-user" aria-hidden="true"></i>
-                              <span class="padding_10">Cart</span></a>
+                              <span class="padding_10">Login</span></a>
+                           </li>
+                           <li><a href="#">
+                              <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                              <span class="padding_10">Report</span></a>
                            </li>
                         </ul>
                      </div>
@@ -136,12 +140,12 @@
                      <div class="carousel-item active">
                         <div class="row">
                            <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
+                              <h4 class="banner_taital">Conquista el juego, domina el mundo virtual. <br> ¡Tu aventura comienza aquí!</h4>
+                              
                            </div>
                         </div>
                      </div>
-                     <div class="carousel-item">
+                   <!--  <div class="carousel-item">
                         <div class="row">
                            <div class="col-sm-12">
                               <h1 class="banner_taital">Segunda parte <br>del carrusel</h1>
@@ -157,7 +161,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  </div>-->
                   <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
                   <i class="fa fa-angle-left"></i>
                   </a>
@@ -186,7 +190,7 @@
                                  <p class="price_text">Price <span style="color: #262626;">$ 2,899</span></p>
                                  <div class="tshirt_img"><img src="images/Gaming pc/PC Gamer Draco Blue Core I5 11400F 11th.png"></div>
                                  <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">Buy Now</a></div>
+                                    <div class="buy_bt"><a href="#" onclick="addToCart(event)">Buy Now</a></div>
                                     <div class="seemore_bt"><a href="#" onclick="toggleSpecs(event)">See More</a></div>
                                        </div>
                                        <div class="specs card" style="display: none;">
@@ -469,7 +473,7 @@
       </div>
        <!-- Gaming pc section end -->
        <!-- Gaming monitor section start -->
-      <div class="fashion_section">
+      <div class="fashion_section" id="Monitor">
          <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
@@ -717,7 +721,7 @@
       </div>
        <!-- Gaming monitor section end -->
        <!-- Gaming laptop section start -->    <!-- no funcionan los botones de carrusel -->
-       <div class="fashion_section">
+       <div class="fashion_section" id="Laptop">
          <div id="laptop_main_slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
@@ -1023,7 +1027,7 @@
       </div>
        <!-- Gaming laptop section end -->
        <!-- Gaming consola section start -->   <!-- no funcionan los botones de carrusel -->
-       <div class="fashion_section">
+       <div class="fashion_section" id="Consola">
          <div id="consola_main_slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
@@ -1288,7 +1292,7 @@
       </div>
        <!-- Gaming consola section end -->
        <!-- Gaming chairs section start -->
-      <div class="jewellery_section">
+      <div class="jewellery_section" id="Chairs">
          <div id="jewellery_main_slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
@@ -1570,32 +1574,28 @@
          </div>
       </div>
       <!-- Gaming chairs section end -->
-       
       <!-- footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">
-            <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
-            <div class="input_bt">
-               <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
-               <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
-            </div>
+            <div class="footer_logo"><a href="index.html"><h1 style="color: white;">LogicNest</h1></a></div>
+            <h2 style="text-align: center; color: skyblue;">Nuestros productos</h2>
             <div class="footer_menu">
                <ul>
-                  <li><a href="#">Best Sellers</a></li>
-                  <li><a href="#">Gift Ideas</a></li>
-                  <li><a href="#">New Releases</a></li>
-                  <li><a href="#">Today's Deals</a></li>
-                  <li><a href="#">Customer Service</a></li>
+                  <li><a href="#pc">Gaming PC</a></li>
+                  <li><a href="#Monitor">Gaming Monitor</a></li>
+                  <li><a href="#Laptop">Gaming Laptop</a></li>
+                  <li><a href="#Consola">Gaming Consola</a></li>
+                  <li><a href="#Chairs">Gaming Chairs</a></li>
                </ul>
             </div>
-            <div class="location_main">Help Line  Number : <a href="#">+1 1800 1200 1200</a></div>
+            <div class="location_main">Nuestra linea de ayuda : <a href="#">+505 76969022  </a></div>
          </div>
       </div>
       <!-- footer section end -->
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
+            <p class="copyright_text">© 2024 All Rights Reserved.</a></p>
          </div>
       </div>
       <!-- copyright section end -->
@@ -1608,6 +1608,7 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <script src="./js/search.js"></script>
       <script>
          function openNav() {
            document.getElementById("mySidenav").style.width = "250px";
